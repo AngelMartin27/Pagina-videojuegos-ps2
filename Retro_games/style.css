@@ -1,0 +1,608 @@
+/*
+Theme Name: RetrogamesTheme
+Theme URI: http://www.example.com
+Author: Angel
+Author URI: http://www.example.com
+Description: Para fanaticos de ps2.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: RetrogamesTheme
+*/
+
+/* ===== HEADER ===== */
+header {
+  background: #ffffff;
+  color: #000;
+  padding: 15px 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+iframe-gameplay {
+  width: 80% !important;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.site-name h1 {
+  font-size: 20px;
+  color: #000;
+  margin: 0;
+  font-weight: bold;
+}
+
+.site-logo img {
+  max-width: 80px;
+  height: auto;
+  display: block;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.menu a:hover {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.menu .btn-contacto {
+  background: #000;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.menu .btn-contacto:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+}
+
+main {
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  border-radius: 10px;
+  text-align: center;
+}
+
+main h1, main h2, main h3 {
+  color: #000;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+main p {
+  line-height: 1.6;
+  color: #444;
+}
+
+article {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+article:last-child {
+  border-bottom: none;
+}
+
+article h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+article h2 a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+article h2 a:hover {
+  color: #000;
+}
+
+article .meta {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+article .excerpt {
+  color: #333;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 40px 0;
+  margin-top: 60px;
+  border-top: 1px solid #ddd;
+  font-size: 0.95rem;
+  color: #444;
+  width: 100%;
+}
+
+.footer-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-inner p {
+  margin: 0 0 12px 0;
+  font-weight: 500;
+  color: #333;
+}
+
+.social {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social a {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.social a:hover {
+  color: #ff6600;
+  transform: translateY(-3px);
+}
+
+/* ===== CATEGORIAS ===== */
+.categorias-page {
+  background-color: #f4f4f4;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.categorias-section {
+  background: #fff;
+  width: 90%;
+  max-width: 1100px;
+  padding: 40px 60px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.titulo-principal {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.descripcion-general {
+  text-align: center;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.bloques-categorias {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.bloque-categoria {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-wrap: wrap;
+}
+
+.bloque-categoria:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.bloque-categoria.invertido {
+  flex-direction: row-reverse;
+}
+
+.texto-categoria {
+  flex: 1;
+  padding: 0 30px;
+  order: 2;
+}
+
+.texto-categoria h2 {
+  color: #000;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.texto-categoria p {
+  color: #333;
+  font-size: 1.05em;
+  line-height: 1.5;
+}
+
+.imagen-categoria {
+  flex: 1;
+  text-align: center;
+  order: 1;
+}
+
+.imagen-categoria img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* ===== BOTONES ===== */
+.boton-ver, .boton {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  order: 3;
+  width: 50%;
+  text-align: center;
+  margin-top: 15px auto 0 auto;
+}
+
+.boton-ver:hover, .boton:hover {
+  background: #e6b800;
+  transform: scale(1.05);
+}
+
+
+/* ===== JUEGOS ===== */
+.categoria-container, .grid-juegos, .lista-juegos, .lista-mods {
+  text-align: center;
+}
+
+.grid-juegos, .lista-juegos, .lista-mods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  grid-auto-rows: auto;
+}
+
+/* ===== JUEGOS EN CATEGORIAS ===== */
+.categoria-container .juegos-categoria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.categoria-container .juegos-categoria .juego-item {
+  width: 100%;
+  max-width: 320px;
+  background: #ffffff;
+  border: 1px solid #333;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  overflow: hidden;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.juego-item:hover, .mod-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255,204,51,0.35);
+}
+
+.juego-imagen img, .mod-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.titulo-juego, .juego-item h4, .mod-item h4 {
+  font-size: 1.4em;
+  color: #000;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.juego-detalles {
+  text-align: left;
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+.juego-plataforma {
+  font-weight: bold;
+  color: #ff4d4d;
+}
+
+.detalle-gameplay {
+  position: relative;
+  padding-bottom: 50%;
+  height: 0;
+  overflow: hidden;
+  max-width: 90%;
+  margin: 0 auto 50px;
+}
+
+.detalle-gameplay iframe,
+.detalle-gameplay object,
+.detalle-gameplay embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ===== CONTACTO ===== */
+.contacto-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px 40px;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.contacto-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contacto-container .subtitulo {
+  text-align: center;
+  color: #333;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.contacto-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contacto-container label {
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.contacto-container input[type="text"],
+.contacto-container input[type="email"],
+.contacto-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  color: #000;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.contacto-container input:focus,
+.contacto-container textarea:focus {
+  border-color: #333;
+  outline: none;
+}
+
+.contacto-container input[type="submit"] {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contacto-container input[type="submit"]:hover {
+  background: #333;
+}
+
+/* ===== NOTICIAS ===== */
+.contenedor-noticias {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 60px auto 0 auto;
+}
+
+.lista-noticias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.noticia {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  transition: transform 0.2s;
+}
+
+.noticia:hover {
+  transform: translateY(-5px);
+}
+
+.noticia img {
+  width: 60%;
+  border-radius: 8px;
+}
+
+.titulo-noticia {
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+}
+
+.fecha {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.leer-mas {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0073aa;
+  text-decoration: none;
+}
+
+.leer-mas:hover {
+  text-decoration: underline;
+}
+
+.historia-wrapper {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  justify-content: center;
+}
+
+.bloque-parrafo {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.bloque-parrafo h2 {
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* ===== HAMBURGUESA ===== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  position: relative;
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #000;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  z-index: 1200;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px,5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px,-5px);
+}
+
+/* ===== MEDIA ===== */
+@media (max-width: 900px) {
+  .hamburger { display: flex; }
+  .navbar { flex-direction: column; }
+  .navbar-left { flex-direction: column; gap:5px; margin-bottom:10px; }
+  .menu {
+    position: fixed;
+    top:0; left:0;
+    width:100%; height:100vh;
+    background:white;
+    flex-direction: column;
+    align-items:center; justify-content:center;
+    gap:25px;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    z-index:1100;
+  }
+  .menu.active { transform: translateY(0); animation: slideDown 0.3s ease;}
+  .bloque-categoria, .bloque-categoria.invertido {flex-direction:column; text-align:center;}
+  .texto-categoria {padding:0; margin-bottom:20px;}
+  .imagen-categoria img {max-width:280px;}
+  @keyframes slideDown {from {opacity:0; transform: translateY(-10px);} to {opacity:1; transform:translateY(0);} }
+}
+
+@media (max-width: 768px) {
+  .grid-juegos {grid-template-columns: 1fr;}
+  .juego-item {max-width:90%;}
+  .juego-gameplay iframe {max-width: 90%;}
+}
+
+@media (max-width: 600px) {
+  footer {font-size:0.9rem; padding:30px 10px;}
+  .social a {font-size:1.2rem; margin:0 8px;}
+  .contacto-container {padding:20px; margin:30px 10px;}
+}
